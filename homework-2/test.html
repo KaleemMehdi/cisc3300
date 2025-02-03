@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>text</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class ="header">
+
+	      <a href="#" style="color:rgb(255,0,0);"; >Link 1</a>
+	      <a href="#" style="color:rgb(255,0,0);" >Link 2</a>
+	      <a href="#" style="color:rgb(255,0,0);" >Link 3</a>
+	
+	</div>
+
+	<p class="new-font">new font</p>
+
+	<p>
+	    This is the Verdana font.
+	</p>
+
+	<form>
+        <fieldset>
+           <label for="firstname">Enter your first name:</label>
+           <input type="text" id="firstname" firstname="firstname" required />
+           <label for="lastname">Enter your last name:</label>
+           <input type="text" id="lastname" lastname="lastname" required />
+           <label for="email">Enter your email:</label>
+           <input type="email" id="email" name="email" required />
+           <input type="submit" value="Submit" id="submit"/>
+
+        </fieldset>
+        </form> 
+
+	<style>
+
+	.header {
+
+	   border: 1px black solid;
+	   width: 100%;
+	   text-align: center;
+           background-color: #7ae00d;
+	   display:inline-block; 
+	
+	}
+
+        .smooch-sans-<uniquifier> {
+           font-family: "Smooch Sans", serif;
+           font-optical-sizing: auto;
+           font-weight: <weight>;
+           font-style: normal;
+        }
+
+	* {
+	  font-family: Verdana;
+	  }
+
+	.new-font {
+           font-size: 100px;
+	   color: pink;
+	   font-family: Smooch Sans;
+	}
+
+	    input {
+                border-bottom: 1px dotted #dcdcdc;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                padding: 5px;
+                width: 300px;
+                margin-bottom: 20px;
+            }
+
+            input:focus {
+                border: 1px dotted #dcdcdc;
+                outline: none;
+            }
+
+            input[type=submit] {
+                color: #ffffff;
+                background-color: #665544;
+                border: none;
+                border-radius: 5px;
+                width: 80px;
+            }
+
+            input#submit:hover {
+                color: #665544;
+                background-color: #efefef;
+            }
+
+            fieldset {
+                width: 350px;
+                border: 1px solid #dcdcdc;
+                border-radius: 10px;
+                padding: 20px;
+            }
+
+	</style>
+
+</body>
+
+</html>

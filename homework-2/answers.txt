@@ -1,0 +1,9 @@
+1. The id attribute specifies a unique id for an element, while the class attribute specifies a class for an element. The id and class attributes are similar in the sense that they both specify something for an element, but what they specify are different and work differently. Multiple elements can share the same class, but they cannot share the same id (one unique id for each element). The id is more specific than the class.
+
+2. A CSS rule consists of two parts which are a selector and a declaration.
+
+3. The important keyword takes precedence over anything. If two or more CSS rules point to the same element, the selector that has the highest specificity will win. If both CSS rules that point to the same element have the same specificity,the rule that was applied last will win. Also, a child element inherits properties from its parent. 
+
+4. Inline displays an element as an inline element (on the same line), but height and width properties will not have any effect. Block displays an element as a block element (starting on a new line) which takes up the whole width. Inline-block formats the element as an inline element, but height and width values can be applied to it. 
+
+5. A border separates the edge of one box from another box. Margins sit outside the edge of the border and can have its width adjusted to create a gap between borders of two adjacent boxes. Padding is the space between the border of a box and any content that is contained inside of it.  

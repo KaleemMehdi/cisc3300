@@ -1,0 +1,6 @@
+1. interpreter, interpreted
+2. dynamic
+3. type coercion 
+4. Non-primitive data types 
+5. Strict equal ( === )
+6. Explanation of outputs are in the js file as comments

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <div id="first-div" class="first">
+            initial text
+        </div>
+
+	<script>
+	document.getElementById('first-div').addEventListener('click', function () {
+
+	const myDiv = document.getElementById("first-div");
+        myDiv.textContent = "added text!";
+        myDiv.style.backgroundColor = 'yellow'; 
+     });	     
+	</script> 
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+   </head>
+
+   <body>
+
+   <div id="list-container">
+       <ul id="ul">
+           <li class="list-item" id="first-list-item">
+               first
+           </li>
+           <li class="second-list-item">
+               second
+           </li>
+           <li class="third-list-item">
+               third
+           </li>
+       </ul>
+   </div>
+
+   <script>
+
+       const firstItem = document.getElementById('first-list-item');
+       firstItem.setAttribute('style', 'color: red')
+
+       const secondItem = document.getElementById('second-list-item');
+       secondItem.setAttribute('style', 'color: blue')
+
+       const thirdItem = document.getElementById('third-list-item');
+       thirdItem.setAttribute('style', 'color: red')
+
+   </script>
+
+   </body>
+
+</html>

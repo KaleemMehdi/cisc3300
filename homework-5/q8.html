@@ -11,10 +11,10 @@
            <li class="list-item" id="first-list-item">
                first
            </li>
-           <li class="second-list-item">
+           <li class="second-list-item" id="second-list-item">
                second
            </li>
-           <li class="third-list-item">
+           <li class="third-list-item" id="third-list-item">
                third
            </li>
        </ul>
@@ -22,14 +22,24 @@
 
    <script>
 
-       const firstItem = document.getElementById('first-list-item');
-       firstItem.setAttribute('style', 'color: red')
+       document.getElementById('first-list-item').addEventListener('click', function () {
 
-       const secondItem = document.getElementById('second-list-item');
-       secondItem.setAttribute('style', 'color: blue')
+           const firstItem = document.getElementById("first-list-item");
+           firstItem.setAttribute('style', 'color: red')
 
-       const thirdItem = document.getElementById('third-list-item');
-       thirdItem.setAttribute('style', 'color: red')
+       });
+
+       document.getElementById('second-list-item').addEventListener('click', function () {
+           const secondItem = document.getElementById("second-list-item");
+           secondItem.setAttribute('style', 'color: blue')
+
+       });
+
+       document.getElementById('third-list-item').addEventListener('click', function () {
+           const thirdItem = document.getElementById("third-list-item");
+           thirdItem.setAttribute('style', 'color: green')
+       });
+
 
    </script>
 

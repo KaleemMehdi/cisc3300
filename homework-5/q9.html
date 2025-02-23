@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<button id="ajax-get">
+    costs for each type of court case
+</button>
+
+<div id="lawyer-container"></div>
+
+<style>
+
+    #lawyer-container{
+        display: inline;
+        text-align: center;
+    }
+
+    .info{
+        color: blue;
+        font-family: Verdana;
+        margin: 25px;
+    }
+
+</style>
+
+<script>
+    $('#ajax-get').on('click', function () {
+        $.ajax({
+            url: 'http://localhost:8888',
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                // the $. ajax() method will automatically parse the JSON and turn it into a JavaScript object for you.
+                console.log(data);
+
+                $.each(data, function (key, value) {
+                    console.log(value)
+                    $('#lawyer-container').append(`
+                              <div class="info">${value['name']}</div>
+                            `)
+                    $('#lawyer-container').append(`
+                              <div class="info">${value['price']}</div>
+                            `)
+                })
+            }
+        });
+    })
+
+</script>
+</body>
+</html>

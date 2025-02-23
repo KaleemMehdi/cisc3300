@@ -51,8 +51,7 @@
             success: function (data) {
                 console.log(data);
                 $("#message-data").html(`
-                                <div class="theData">${emailInput.val()}</div>
-                                <div class="theData">${passwordInput.val()}</div>
+                                <div class="theData">${data.message}</div>
                             `);
             },
             error: function (error) {

@@ -1,0 +1,5 @@
+1. $
+2. Associative arrays
+3. {$variable}
+4. determined automatically
+5. include

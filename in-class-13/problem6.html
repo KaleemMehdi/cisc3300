@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> including stuff</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div id="result">
+
+</div>
+<button id = "getData" >Get Data</button>
+<script>
+
+    $(document).ready(function()
+    {
+        $("#getData").click(function()
+        {
+            console.log("test")
+            $.ajax(
+                {
+                    url: 'http://localhost:8888/index',
+                    type: "GET",
+                    dataType: "json",
+                    success: function(response)
+                    {
+                        $.each(response, function (key, value) {
+                            console.log(value)
+                            $("#result").append(value.name);
+
+
+                        })
+
+                    },
+
+                });
+        });
+    });
+</script>
+
+</body>
+</html>

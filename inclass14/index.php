@@ -4,8 +4,8 @@ require 'Suit.php';
 
 use cisc3300\inclass14\Suit;
 
-$suit = new Suit('coat', 'tie', 'shirt', 'shoes');
-echo Suit::getItems();
+$item = new Suit('blue coat', 'pink tie', 'white dress shirt', 'black dress shoes');
 
+echo $item->getItems();
 
 ?>

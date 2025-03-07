@@ -1,8 +1,9 @@
 <?php
 
-namespace cisc3300\inclass15\Models;
+namespace inclass15\Models;
 
-class Model {
+class User
+{
     public function getAllUsersByName($params)
     {
         //in future these will come from the database
@@ -10,15 +11,20 @@ class Model {
         $allUsers = [
             [
                 'id' => '1',
-                'name' => 'pinecone'
+                'name' => 'mary'
             ],
             [
                 'id' => '2',
-                'name' => 'nathan'
+                'name' => 'bob'
             ],
+            [
+                'id' => '3',
+                'name' => 'tim'
+            ],
+
+
         ];
 
         return $allUsers;
-
-      }
     }
+}

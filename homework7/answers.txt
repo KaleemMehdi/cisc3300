@@ -1,0 +1,15 @@
+1. Classes are templates for creating objects. An object is an instance of a class. OOP is a programming paradigm where objects represent real world entities and contain data that can be accessed through methods.
+2. We use abstract classes because they provide some high level functionality and leave out certain details to be implemented by derived classes. For example, you can have a parent class called Pet that contains some data regarding all pets, but you can also have child classes called Dog and Cat which are more specific. Abstract classes also allow the parent class to create defaults for methods.
+3. Superglobals are predefined PHP variables that are available in all scopes throughout a script. Some examples of data they provide include $_SERVER["REQUEST_URI"] which gives us our URI, and $_SERVER["REQUEST_METHOD"] which gives us our request method.
+4. The first step is to define a namespace where the class will be used. The second step is to import the class into the current namespace with the use keyword.
+5. MVC is an architectural pattern that separates an application into three main logical components: model, view, and controller. The model component can add or retrieve data from the database. It responds to the controller's request because the controller can't interact with the database by itself. The model interacts with the database and gives the required data back to the controller. The controller acts as an intermediary between the views and the model. The controller tells the model what to do. The controller processes incoming requests, manipulates data using the model component, and interacts with the view to render the final output. The controller also handles routing. The view component generates a user interface for the user. Views are created by the data which is collected by the model component, and the view only interacts with the controller.
+6a. URL: /users
+HTTP: GET
+6b. URL: /users/id
+HTTP: GET
+6c. URL: /users
+HTTP: POST
+6d. URL: /users/id
+HTTP: PATCH
+6e. URL: /users/id
+HTTP: DELETE

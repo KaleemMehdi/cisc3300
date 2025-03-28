@@ -1,0 +1,5 @@
+1. PHP Data Objects (PDOs)
+2. DSN (Data Source Name)
+3. your .env file or the information intended to be on it
+4. A prepared statement
+5. SQL injection hack

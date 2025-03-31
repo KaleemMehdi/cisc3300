@@ -1,6 +1,6 @@
 <?php
 require_once "../homework9/models/Model.php";
-require_once "../homework9/models/User.php";
+require_once "../homework9/models/Product.php";
 require_once "../homework9/controllers/ProductController.php";
 
 $env = parse_ini_file('../homework9/.env');

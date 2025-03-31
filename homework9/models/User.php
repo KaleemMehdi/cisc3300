@@ -2,9 +2,9 @@
 
 namespace homework9\models;
 
-class User extends Model {
+class Product extends Model {
 
-    public function getUsers($name) {
+    public function getProducts($name) {
         if ($name) {
             $query = "select * from products WHERE name LIKE :name";
             return $this->fetchAllWithParams($query, ['name' => '%' . $name . '%']);
@@ -13,7 +13,7 @@ class User extends Model {
         return $this->fetchAll($query);
     }
 
-    public function getUserById($id){
+    public function getProductById($id){
         $query = "select * from products where id = :id";
         return $this->fetchAllWithParams($query, ['id' => $id])[0] ?? null;
     }

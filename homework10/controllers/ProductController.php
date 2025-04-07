@@ -37,7 +37,7 @@ class ProductController
                 $errors['descriptionShort'] = 'description is too short';
             }
         } else {
-            $errors['requireddescription'] = 'description is required';
+            $errors['requiredDescription'] = 'description is required';
         }
 
         if (count($errors)) {

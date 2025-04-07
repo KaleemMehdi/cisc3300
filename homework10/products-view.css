@@ -1,3 +1,8 @@
+* {
+    margin: 0 auto;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,7 +25,7 @@ a {
     border: 2px solid red;
 }
 .error-text {
-    color: red;
+    description: red;
     font-weight: 500;
 }
 
@@ -55,3 +60,4 @@ a {
 .margin-ten {
     margin-top: 10px;
 }
+
